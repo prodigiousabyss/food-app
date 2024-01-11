@@ -19,8 +19,10 @@ export const Body = () => {
       }
 
   return (
-    <div className="flex">
+    <div className="flex justify-center w-full py-10">
+    <div className="grid grid-cols-5 gap-6">
       {listOfRes.map((res) => <RestaurantCard restaurant={res.info} key={res.info.id}/>)}
+    </div>
     </div>
   )
 }
